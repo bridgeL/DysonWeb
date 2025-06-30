@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>放置戴森球</title>
+        <style>
+            #main {
+                background-color: #476680; /* 黑色背景 */
+                background-image: 
+    /* 白色水平线（Y方向，每100px一条） */ linear-gradient(
+                        to bottom,
+                        transparent 99px,
+                        white 100px
+                    ),
+                    /* 白色垂直线（X方向，每200px一条） */
+                        linear-gradient(
+                            to right,
+                            transparent 199px,
+                            white 200px
+                        );
+                background-size: 200px 100px; /* 控制重复间距 */
+                position: relative;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body style="margin: 0">
+        <div id="main"></div>
+        <script src="utils.js"></script>
+        <script src="library.js"></script>
+        <script src="data.js"></script>
+        <script src="item.js"></script>
+        <script src="machine.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
